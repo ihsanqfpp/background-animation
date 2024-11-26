@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .ANIMATION {
+            width: 30vw; /* Full viewport width */
+            height: 50vh; /* Full viewport height */
+            background-size: cover; /* Maintain image aspect ratio */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat;
+            box-shadow: 20px 20px 10px gray;
+            animation: slider 10s linear infinite;
+        }
+        @keyframes slider {
+            0% { background-image: url('img2.jfif'); }
+            30% { background-image: url('img3.jfif'); }
+            60% { background-image: url('img4.jfif'); }
+            100% { background-image: url('img2.jfif'); }
+        }
+    </style>
+</head>
+<body>
+    <div class="ANIMATION"></div>
+</body>
+</html>
